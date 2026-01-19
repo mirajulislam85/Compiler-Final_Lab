@@ -1,0 +1,71 @@
+//Polish Notation (Infix → Prefix)
+Input :
+Enter an infix expression: a+b*c
+
+Output :
+Polish Notation (Prefix): +a*bc
+
+// Quadruples
+Input :
+Enter the number of quadruples: 3
+
+Quadruple 1:
+Enter operator: *
+Enter argument 1: c
+Enter argument 2: d
+Enter result: t1
+
+Quadruple 2:
+Enter operator: +
+Enter argument 1: b
+Enter argument 2: t1
+Enter result: t2
+
+Quadruple 3:
+Enter operator: =
+Enter argument 1: t2
+Enter argument 2:
+Enter result: a
+
+Output :
+Index  Op  Arg1  Arg2  Result
+0      *   c     d     t1
+1      +   b     t1    t2
+2      =   t2          a
+
+//Triples
+Input :
+Enter number of operations: 3
+
+Operation 1
+Operator: *
+Argument 1: c
+Argument 2: d
+
+Operation 2
+Operator: +
+Argument 1: b
+Argument 2: (0)
+
+Operation 3
+Operator: =
+Argument 1: a
+Argument 2: (1)
+
+Output :
+Three Address Code (Triples):
+(0) * c d
+(1) + b (0)
+(2) = a (1)
+
+//Type Checking
+Input :
+declare int x
+assign x 10
+assign x 10.5
+exit
+
+Output :
+Declared x as int
+Type check passed for x = 10
+Type check failed for x = 10.5
